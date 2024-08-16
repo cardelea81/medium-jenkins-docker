@@ -2,8 +2,9 @@ pipeline {
     agent {
         node {
           label 'docker'
-        }
-        docker { image 'maven:3.8.6-openjdk-11-slim' }
+        
+      }
+   }     docker { image 'maven:3.8.6-openjdk-11-slim' }
   }
     stages {
         stage('Build Application') {
